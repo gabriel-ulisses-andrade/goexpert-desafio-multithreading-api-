@@ -1,17 +1,35 @@
-# goexpert-desafio-multithreading-api
+## Apresentação
 
-Neste desafio você terá que usar o que aprendemos com Multithreading e APIs para buscar o resultado mais rápido entre duas APIs distintas.
+Este projeto visa resolver o desafio de desenvolver uma API integrada a dois serviços de consulta de CEP, devolvendo a consulta mais rápida usando técnicas de multithreading. Desafio proposto pela fullcycle no curso de Go Expert.
 
-As duas requisições serão feitas simultaneamente para as seguintes APIs:
-
-https://brasilapi.com.br/api/cep/v1/ + cep
-
-http://viacep.com.br/ws/" + cep + "/json/
-
-Os requisitos para este desafio são:
-
+Os requisitos da solução são:
+- Realizar duas requisições serão feitas simultaneamente para as seguintes APIs:
+  - https://brasilapi.com.br/api/cep/v1/01153000 + cep
+  - http://viacep.com.br/ws/" + cep + "/json/
 - Acatar a API que entregar a resposta mais rápida e descartar a resposta mais lenta.
-
 - O resultado da request deverá ser exibido no command line com os dados do endereço, bem como qual API a enviou.
-
 - Limitar o tempo de resposta em 1 segundo. Caso contrário, o erro de timeout deve ser exibido.
+
+## Como Executar o Projeto
+
+1. Clone o repositório
+
+```shell 
+git clone https://github.com/gabriel-ulisses-andrade/goexpert-desafio-client-server-api/tree/main
+cd goexpert-desafio-client-server-api
+```
+
+2. Execute o servidor
+
+```shell
+cd server
+go mod tity
+go run main.go
+```
+
+3. Execute o client
+```shell
+cd client
+go mod tity
+go run main.go
+```
