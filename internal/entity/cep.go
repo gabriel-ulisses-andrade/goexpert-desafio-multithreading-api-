@@ -26,6 +26,14 @@ type CEP struct {
 	Servico string `json:"servico"`
 }
 
+func (cep *CEP) ToString() string {
+	return "CEP: " + cep.Cep + " - " + cep.Rua + ", " + cep.Bairro + " - " + cep.Cidade + "/" + cep.Estado
+}
+
+func (cep *CEP) GetServico() string {
+	return "Consulta realizada via API: " + cep.Servico
+}
+
 func NewCepViaCep(cep dto.ViaCepApiCEPResponse) (*CEP, error) {
 	cepEntity := &CEP{
 		Cep:     strings.Replace(cep.Cep, "-", "", -1),
