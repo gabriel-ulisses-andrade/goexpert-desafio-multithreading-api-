@@ -15,21 +15,14 @@ Os requisitos da solução são:
 1. Clone o repositório
 
 ```shell 
-git clone https://github.com/gabriel-ulisses-andrade/goexpert-desafio-client-server-api/tree/main
-cd goexpert-desafio-client-server-api
+git clone https://github.com/gabriel-ulisses-andrade/goexpert-desafio-multithreading-api-/tree/main
+cd goexpert-desafio-multithreading-api-
 ```
 
 2. Execute o servidor
 
 ```shell
-cd server
-go mod tity
-go run main.go
-```
-
-3. Execute o client
-```shell
-cd client
+cd cmd/server
 go mod tity
 go run main.go
 ```
