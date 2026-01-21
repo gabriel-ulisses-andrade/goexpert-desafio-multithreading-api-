@@ -2,7 +2,7 @@
 
 Este projeto visa resolver o desafio de desenvolver uma API integrada a dois serviços de consulta de CEP, devolvendo a consulta mais rápida usando técnicas de multithreading. Desafio proposto pela fullcycle no curso de Go Expert.
 
-Os requisitos da solução são:
+#### Os requisitos da solução são:
 - Realizar duas requisições serão feitas simultaneamente para as seguintes APIs:
   - https://brasilapi.com.br/api/cep/v1/01153000 + cep
   - http://viacep.com.br/ws/" + cep + "/json/
